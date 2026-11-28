@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id" class="js">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#111315">
+    <meta name="description" content="Barbershop Downstreet, tempat cukur rambut di Jl. Ahmad Yani, Ende Selatan. Temukan gaya yang paling mencerminkan dirimu.">
+    <title>@yield('title', 'Barbershop Downstreet — Ende')</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+    @include('partials.navbar')
+
+    <main>
+        @yield('content')
+    </main>
+
+    @include('partials.footer')
+
+    <script src="{{ asset('js/script.js') }}" defer></script>
+</body>
+</html>
